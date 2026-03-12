@@ -34,7 +34,7 @@
     </nav>
 
     <main class="main-content">
-    <h1>Full-Page Navigation</h1>
+    <h1 id="head">Full-Page Navigation</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta porro sapiente excepturi debitis cum assumenda quasi quibusdam eligendi numquam vitae? Unde, optio dolore! Voluptatem officiis eum neque nihil laudantium quos.</p>
     <p>Nisi harum ipsam reiciendis similique ipsum numquam quidem praesentium, cumque accusantium, magnam minima id voluptas et ad eos consequuntur libero impedit fuga. Ipsam id fugit animi quidem, doloribus dolorem nobis.</p>
     <p>Sapiente cumque omnis, exercitationem molestiae dolores id enim praesentium labore quia esse dolore ad suscipit nostrum temporibus veritatis aperiam voluptatem. Quisquam, magnam excepturi nobis illo eligendi expedita eos molestias accusantium?</p>
@@ -47,6 +47,30 @@
     <p>Sequi at eveniet a, ad corporis sunt ullam natus deleniti obcaecati perferendis culpa ratione blanditiis! Sunt nisi, porro, quisquam officiis ducimus numquam culpa dicta, voluptatibus nam autem eaque! Facilis, voluptates.</p>
     <p>Sapiente cumque omnis, exercitationem molestiae dolores id enim praesentium labore quia esse dolore ad suscipit nostrum temporibus veritatis aperiam voluptatem. Quisquam, magnam excepturi nobis illo eligendi expedita eos molestias accusantium saepe omnis ex placeat assumenda esse corrupti, nobis veniam neque architecto possimus quod laborum iusto eos maxime recusandae asperiores in. Vel magnam dolore pariatur, cumque similique necessitatibus? Autem, facere quibusdam.</p>
     <p>Sequi at eveniet a, ad corporis sunt ullam natus deleniti obcaecati perferendis culpa ratione blanditiis! Sunt nisi, porro, quisquam officiis ducimus numquam culpa dicta, voluptatibus nam autem eaque! Facilis, voluptates.</p>
+    <button id="btn" class="nav-button">Call Backend</button>
+    <div class="flex-wrap">
+        <fieldset>
+            <legend>Account</legend>
+            <form id="auth-form" novalidate>
+                <input type="radio" name="rg" id="sign-in" checked/>
+                <input type="radio" name="rg" id="sign-up" />
+                <input type="radio" name="rg" id="reset" />        
+
+                <label class="sign-in">Sign in</label>
+                <label class="sign-up">Sign up</label>
+                <label class="reset">Reset</label>  
+
+                <input class="sign-up sign-in reset" type="email" name="email" placeholder="Email" />
+                <br class="sign-up sign-in reset">
+                <input class="sign-up sign-in" type="password" name="password" placeholder ="Password" />
+                <br class="sign-up sign-in">
+                <input class="sign-up" type="password" name="confirmPassword" placeholder ="Repeat Password" />
+                <br class="sign-up">
+                <button type="submit" class="form-button">Submit</button>        
+            </form>
+        </fieldset>
+    </div>
     </main>
+<script src="./script.js"></script>
 </body>
 </html>

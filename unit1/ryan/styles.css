@@ -184,6 +184,44 @@ h1 {
   }
 }
 
+.nav-button{
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.sign-up,
+.reset,
+.sign-in{
+  display: none;
+}
+
+#sign-up:checked~ .sign-up{
+  display: block;
+}
+
+#sign-in:checked~ .sign-in{
+  display: block;
+}
+
+#reset:checked~ .reset{
+  display: block;
+}
+
+.form-button{
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
 @keyframes nav-bg {
   from { transform: translateX(-100%) skewX(-15deg) }
   to { transform: translateX(0) }

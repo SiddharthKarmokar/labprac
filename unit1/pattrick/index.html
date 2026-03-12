@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive Web App</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#playground">Playground</a>
+</nav>
+
+<section id="home">
+    <h1 id="heading">Welcome!</h1>
+    <button id="changeText">Change Text</button>
+</section>
+
+<section id="gallery" class="hidden">
+    <h2>Gallery</h2>
+
+    <button id="prev">Prev</button>
+
+    <div class="carousel">
+        <img src="./assets/img1.jpg">
+        <img src="./assets/img2.jpg">
+        <img src="./assets/img3.jpg">
+        <img src="./assets/img4.jpg">
+        <img src="./assets/img5.jpg">
+        <img src="./assets/img6.jpg">
+    </div>
+
+    <button id="next">Next</button>
+</section>
+
+<section id="playground" class="hidden">
+    <h2>Playground</h2>
+</section>
+
+<script src="./scripts.js"></script>
+</body>
+</html>
