@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="imgcontainer">
+                <img src="./assets/img1.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="file-upload"><b>Select file to upload:</b></label>
+                <input type="file" id="file-upload" name="file" required>
+
+                <button type="submit" value="Upload File">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
